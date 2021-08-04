@@ -1,0 +1,81 @@
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+.bg-image {
+  height: 57rem;
+  margin-left: 7rem;
+}
+.title {
+  user-select: none;
+}
+
+#text,
+#shadow {
+  color: #fff;
+}
+
+#text {
+  color: #333;
+}
+
+#shadow {
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #019cd6, 0 0 70px #019cd6,
+    0 0 80px #019cd6, 0 0 100px #019cd6, 0 0 150px #019cd6;
+}
+
+#glow {
+  animation: neon1 linear infinite 2s;
+  will-change: opacity;
+}
+
+#blink {
+  animation: blink linear infinite 2s;
+}
+
+@keyframes neon1 {
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes blink {
+  70% {
+    opacity: 1;
+  }
+  79% {
+    opacity: 0;
+  }
+  81% {
+    opacity: 1;
+  }
+  82% {
+    opacity: 0;
+  }
+  83% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 0;
+  }
+  92.5% {
+    opacity: 1;
+  }
+}

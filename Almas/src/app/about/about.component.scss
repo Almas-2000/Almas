@@ -1,0 +1,66 @@
+$green: #9bef09;
+$lightgreen: #58fbc6;
+$blue: #4f40e1;
+$lightblue: #56ebe7;
+$purple: #a404f4;
+$lightpurple: #ef09e8;
+$pink: #fb0c8c;
+$yellow: #fafb09;
+
+//Neon block
+.neon-block {
+  .block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 88%;
+    height: 75px;
+    background: linear-gradient(45deg, #272325 40%, #020104);
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      left: -2px;
+      z-index: -1;
+      background: linear-gradient(45deg, #ff005e, #fbff00);
+      animation: neon-block 1.5s linear infinite;
+    }
+    .rainbow {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      bottom: -4px;
+      left: -4px;
+      filter: blur(15px);
+      z-index: -2;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(315deg, #ff005e, #fbff00);
+      }
+      &:after {
+        animation: neon-block 1.5s linear infinite;
+      }
+    }
+  }
+}
+@keyframes neon-block {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}

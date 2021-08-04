@@ -1,1 +1,49 @@
-<p>contact works!</p>
+
+<div class="m-5 mt-2 mb-3">
+
+    <h1 class="text-center">
+        <span class="purple">C</span>
+        <span class="blue">o</span>
+        <span class="lightblue">n</span>
+        <span class="lightpurple">t</span>
+        <span class="yellow">a</span>
+        <span class="lightgreen">c</span>
+        <span class="green">t</span>
+        <span class="purple"> m</span>
+        <span class="lightblue">e</span>
+    </h1>
+    
+    <form class="p-3" #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)" >
+        <div class="form-row d-flex">
+          <div class="form-group col-md-6 p-2">
+            <input type="text" name="name" class="form-control" id="inputEmail4" placeholder="Name" [(ngModel)]="user.name">
+          </div>
+          <div class="form-group col-md-6 p-2">
+            <input type="email" name="email" class="form-control" id="inputPassword4" placeholder="Email" [(ngModel)]="user.email">
+          </div>
+        </div>
+        <div class="form-group p-2">
+          <input type="text" name="subject" class="form-control" id="inputAddress" placeholder="Subject" [(ngModel)]="user.subject">
+        </div>
+        <div class="form-group p-2">
+          <input type="text" name="message" class="form-control message" id="inputAddress2" placeholder="Message" [(ngModel)]="user.message">
+        </div>
+   
+<div class="center pt-5" >
+  <section class="neon-block">
+    <button class="block">
+      <a type="submit" (click)="onSubmit(myForm.value)" class="rainbow"></a>
+      Send message
+    </button>
+  </section>
+    </div>
+
+
+    </form>
+    </div>
+    <div class="center footer pt-2 ">
+   <a href="https://github.com/Almas-2000"><img class="icon-1 p-1" src="assets/img/1.png"></a> 
+   <a href="https://www.behance.net/setayeshalmasi"><img class="icon-2 p-1" src="assets/img/2.png"></a>
+   <a href="https://www.instagram.com/almasdes3ign/"><img class="icon-3 p-1" src="assets/img/3.png"></a>
+   <a href="https://dribbble.com/stalmas"><img class="icon-4 p-1" src="assets/img/4.png"></a>
+     </div>

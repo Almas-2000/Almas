@@ -12,4 +12,16 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  user = {
+    name: '',
+    email:  '',
+    subject: '',
+    message: ''
+};
+
+onSubmit(user: any) {
+    console.log(user);
+}
+
+
 }
