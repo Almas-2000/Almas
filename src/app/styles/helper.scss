@@ -1,3 +1,41 @@
+@media (max-width: 640px) and (min-width: 360px) {
+  body {
+    padding: 0;
+  }
+  .navbar {
+    margin: 0 !important;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .title-small {
+    padding: 7rem 0 5rem 1rem !important;
+  }
+  .main-page {
+    padding-left: 1rem !important;
+  }
+  .bg-image {
+    height: 17rem !important;
+    margin-left: 10rem !important;
+    margin-top: -25rem !important;
+  }
+  form {
+    margin: 0;
+    font-family: Nunito;
+  }
+  input {
+    width: 3rem;
+    background: #d6d6d6 !important;
+  }
+  ::placeholder {
+    color: #111 !important;
+    font-size: 15px;
+  }
+  .message {
+    height: 12rem !important;
+  }
+}
+
 .title {
   padding-top: 10rem !important;
   align-self: center;
@@ -73,4 +111,10 @@
 }
 .main-page {
   padding-left: 4rem;
+}
+.header-icon {
+  font-size: 15px;
+  img {
+    width: 40px;
+  }
 }

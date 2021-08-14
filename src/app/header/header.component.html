@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid d-none d-md-block">
   <div class="row">
     <div class="col-md-12">
       <nav class="navbar mr-5">
@@ -13,5 +13,21 @@
         </div>
       </nav>
     </div>
+  </div>
+</div>
+
+<div class="d-block d-md-none container-fluid ">
+  <div class="row">
+      <nav class="navbar">
+        <a class="navbar-brand header-icon" href="#"> <img src="assets/img/Almas-logo.svg">ALMAS DES3IGN</a>
+       <div class="">
+        <a *ngIf="currentRoute === '/'" routerLink="/contact-component">
+          <img class="" src="assets/img/contact.png">
+        </a>
+        <a *ngIf="currentRoute === '/contact-component'" routerLink="/">
+          <img class="" src="assets/img/close.png">
+        </a>
+      </div>
+      </nav>
   </div>
 </div>

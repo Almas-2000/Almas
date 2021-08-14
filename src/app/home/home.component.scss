@@ -5,6 +5,28 @@
   animation-timing-function: ease-in-out;
 }
 
+@media (max-width: 640px) and (min-width: 360px) {
+  .neon-block {
+    .block {
+      width: 180px !important;
+      height: 43px !important;
+      font-size: 10px !important;
+    }
+  }
+  .icon-1 {
+    width: 44px !important;
+  }
+  .icon-2 {
+    width: 54px !important;
+  }
+  .icon-3 {
+    width: 42px !important;
+  }
+  .icon-4 {
+    width: 44px !important;
+  }
+}
+
 @keyframes floating {
   from {
     transform: translate(0, 0px);
